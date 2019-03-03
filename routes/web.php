@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('Controller','MyController@xinchao');
+
+
+Route::get('View','MyController@myView');
+
+
+Route::get('{ten}',function($ten){
+	echo $ten." Bạn Thật Đẹp Trai";
+});
